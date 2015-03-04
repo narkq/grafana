@@ -80,7 +80,7 @@ define([
 
       if (options.text) {
         var text = $sanitize(options.text);
-        tooltip += text.replace(/\n/g, '<br/>');
+        tooltip += '<span class="tooltip-nowrap">' + text + '</span>';
       }
 
       tooltip += "</small>";
